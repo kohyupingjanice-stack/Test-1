@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="card">
+        <p class="eyebrow">Student Directory</p>
+        <h1>Search Students by Name</h1>
+
+        <div class="search-wrap">
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Type a student name..."
+            aria-label="Search by student name"
+          />
+        </div>
+
+        <div id="status" class="status">Loading student records...</div>
+        <div id="resultsCount" class="results-count" hidden></div>
+
+        <div class="table-wrap">
+          <table id="resultsTable" hidden>
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
